@@ -1,0 +1,97 @@
+.solutions {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 50px;
+
+    // .solutions__info
+
+    &__info {
+        flex-grow: 1;
+        margin-right: 20px;
+    }
+
+    // .solutions__title
+
+    &__title {
+        margin-bottom: 25px;
+    }
+
+    // .solutions__item
+
+    &__item {
+        &+& {
+            border-top: 1px solid $light;
+        }
+
+        @media (max-width: $bp-3) {
+            margin: 0 auto;
+            max-width: 339px;
+        }
+    }
+
+    // .solutions__button
+
+    &__button {
+        position: relative;
+        border: none;
+        padding: 20px;
+        width: 100%;
+        font-weight: 700;
+        text-align: left;
+        color: $text;
+        background-color: transparent;
+        transition: $transition;
+        cursor: pointer;
+
+        &--active {
+            color: $white;
+            background-color: $primary;
+
+            &::after {
+                content: "";
+                position: absolute;
+                right: 20px;
+                top: 50%;
+                width: 7px;
+                height: 11px;
+                background: url("../../img/icons/arrow.svg") center/cover no-repeat;
+                transform: translateY(-50%);
+
+                @media (max-width: $bp-2) {
+                    display: none;
+                }
+            }
+
+            @media (max-width: $bp-2) {
+                color: $text;
+                background-color: transparent;
+            }
+        }
+
+        @media (max-width: $bp-2) {
+            padding-left: 0;
+            pointer-events: none;
+        }
+    }
+
+    &__img {
+        display: none;
+        width: 962px;
+
+        &--active {
+            display: block;
+        }
+
+        @media (max-width: $bp-1) {
+            width: 600px;
+        }
+
+        @media (max-width: $bp-2) {
+            display: block;
+        }
+
+        @media (max-width: $bp-3) {
+            width: 339px;
+        }
+    }
+}
