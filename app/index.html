@@ -1,0 +1,535 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/iconsfont.css">
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
+    <link rel="stylesheet" href="css/style.min.css">
+    <title>I-lights</title>
+</head>
+
+<body>
+    <header class="header">
+        <div class="header__wrapper container">
+            <a href="index.html" class="header__logo-link">
+                <img src="img/content/logo.png" alt="Логотип I-lights" class="header__logo" width="75" height="58">
+            </a>
+
+            <nav class="header__nav nav-header">
+                <ul class="nav-header__list">
+                    <li class="nav-header__item">
+                        <a href="about.html" class="nav-header__link">О компании</a>
+                    </li>
+                    <li class="nav-header__item">
+                        <a href="serviсes.html" class="nav-header__link">Услуги</a>
+                    </li>
+                    <li class="nav-header__item">
+                        <a href="catalog.html" class="nav-header__link">Каталог</a>
+                    </li>
+                    <li class="nav-header__item">
+                        <a href="delivery.html" class="nav-header__link">Доставка и оплата</a>
+                    </li>
+
+                    <li class="nav-header__item">
+                        <a href="cart.html" class="nav-header__link nav-header__link--cart">Подборка <span
+                                class="nav-header__button"></span></a>
+                    </li>
+                </ul>
+            </nav>
+            <button class="header__menu-icon icon-menu" type="button">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+
+
+            <div data-da=".nav-header,639,1" class="header__contacts contacts-header">
+                <ul class="contacts-header__list">
+                    <li class="contacts-header__item">
+                        <a href="mailto:info@i-lights.ru"><span
+                                class="icon-email contacts-header__icon"></span>info@i-lights.ru
+                        </a>
+                    </li>
+                    <li class="contacts-header__item contacts-header__item--phone">
+                        <a href="tel:+74952335557"><span class="icon-phone contacts-header__icon"></span>+7 (495) 233 55
+                            57</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </header>
+
+    <main class="main">
+        <section class="main__banner banner-main">
+            <div class="banner-main__info info-banner-main">
+                <div class="info-banner-main__wrapper">
+                    <h1 class="info-banner-main__title"><span>I-LIGHTS</span> - Эффективные решения</h1>
+                    <p class="info-banner-main__subtitle">Компания I-lights это современная производственно-проектная
+                        организация
+                        с
+                        многолентим опытом работы в сфере разработки </p>
+                    <a href="about.html" class="info-banner-main__button button button--secondary">Подробнее</a>
+                </div>
+            </div>
+            <div class="banner-main__slider-toggles">
+                <button class="banner-main__slider-toggle banner-main__slider-toggle--prev"><span
+                        class="visually-hidden">Предыдущий
+                        слайд</span></button>
+                <button class="banner-main__slider-toggle banner-main__slider-toggle--next"><span
+                        class="visually-hidden">Следующий
+                        слайд</span></button>
+            </div>
+
+            <div class="banner-main__slider slider-banner-main">
+                <div class="slider-banner-main__container swiper-container">
+                    <div class="slider-banner-main__wrapper swiper-wrapper">
+                        <div class="slider-banner-main__slide swiper-slide">
+                            <div class="slider-banner-main__image">
+                                <picture>
+                                    <source media="(max-width:639px)" srcset="img/content/slide-1_0.35.jpg">
+                                    <source media="(max-width:991px)" srcset="img/content/slide-1_0.6.jpg">
+                                    <img src="img/content/slide-1.jpg" alt="">
+                                </picture>
+                            </div>
+                        </div>
+                        <div class="slider-banner-main__slide swiper-slide">
+                            <div class="slider-banner-main__image">
+                                <picture>
+                                    <source media="(max-width:639px)" srcset="img/content/slide-2_0.35.jpg">
+                                    <source media="(max-width:991px)" srcset="img/content/slide-2_0.6.jpg">
+                                    <img src="img/content/slide-2.jpg" alt="">
+                                </picture>
+                            </div>
+                        </div>
+                        <div class="slider-banner-main__slide swiper-slide">
+                            <div class="slider-banner-main__image">
+                                <picture>
+                                    <source media="(max-width:639px)" srcset="img/content/slide-3_0.35.jpg">
+                                    <source media="(max-width:991px)" srcset="img/content/slide-3_0.6.jpg">
+                                    <img src="img/content/slide-3.jpg" alt="">
+                                </picture>
+                            </div>
+                        </div>
+                        <div class="slider-banner-main__slide swiper-slide">
+                            <div class="slider-banner-main__image">
+                                <picture>
+                                    <source media="(max-width:639px)" srcset="img/content/slide-4_0.35.jpg">
+                                    <source media="(max-width:991px)" srcset="img/content/slide-4_0.6.jpg">
+                                    <img src="img/content/slide-4.jpg" alt="">
+                                </picture>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="slider-banner-main__scrollbar swiper-scrollbar"></div>
+                </div>
+            </div>
+        </section>
+
+        <section class="main__catalog catalog-main container">
+            <h2 class="catalog-main__title title--xl title--decorate">Каталог</h2>
+            <div class="catalog-main__content">
+                <div class="catalog-main__accordion accordion-catalog-main">
+                    <div class="accordion-catalog-main__item accordion-catalog-main__item--1"
+                        data-main-tab-name="tab-1">
+                        <h3 class="accordion-catalog-main__item-title">
+                            <button class="accordion-catalog-main__toggle">Трековые светильники</button>
+                        </h3>
+                        <div class="accordion-catalog-main__content">
+                            <p class="accordion-catalog-main__info">
+                                Органично вписываются в интерьеры в стиле хай-тек, лофт
+                            </p>
+                            <a href="catalog.html" class="accordion-catalog-main__link button button--primary">Перейти в
+                                каталог</a>
+                        </div>
+                    </div>
+                    <div class="accordion-catalog-main__item accordion-catalog-main__item--2"
+                        data-main-tab-name="tab-2">
+                        <h3 class="accordion-catalog-main__item-title">
+                            <button class="accordion-catalog-main__toggle">Встраиваемые светильники</button>
+                        </h3>
+                        <div class="accordion-catalog-main__content">
+                            <p class="accordion-catalog-main__info">
+                                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Mollitia aliquid
+                                exercitationem repudiandae accusantium ratione delectus!
+                            </p>
+                            <a href="catalog.html" class="accordion-catalog-main__link button button--primary">Перейти в
+                                каталог</a>
+                        </div>
+                    </div>
+                    <div class="accordion-catalog-main__item accordion-catalog-main__item--3"
+                        data-main-tab-name="tab-3">
+                        <h3 class="accordion-catalog-main__item-title">
+                            <button class="accordion-catalog-main__toggle">Фигурные светильники</button>
+                        </h3>
+                        <div class="accordion-catalog-main__content">
+                            <p class="accordion-catalog-main__info">
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Similique, nulla.
+                            </p>
+                            <a href="catalog.html" class="accordion-catalog-main__link button button--primary">Перейти в
+                                каталог</a>
+                        </div>
+                    </div>
+                    <div class="accordion-catalog-main__item accordion-catalog-main__item--4"
+                        data-main-tab-name="tab-4">
+                        <h3 class="accordion-catalog-main__item-title">
+                            <button class="accordion-catalog-main__toggle">Светильники Армстронг</button>
+                        </h3>
+                        <div class="accordion-catalog-main__content">
+                            <p class="accordion-catalog-main__info">
+                                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Tenetur excepturi illo
+                                delectus.
+                            </p>
+                            <a href="catalog.html" class="accordion-catalog-main__link button button--primary">Перейти в
+                                каталог</a>
+                        </div>
+                    </div>
+                    <div class="accordion-catalog-main__item accordion-catalog-main__item--5"
+                        data-main-tab-name="tab-5">
+                        <h3 class="accordion-catalog-main__item-title">
+                            <button class="accordion-catalog-main__toggle">Светильники Армстронг с равномерной
+                                засветкой</button>
+                        </h3>
+                        <div class="accordion-catalog-main__content">
+                            <p class="accordion-catalog-main__info">
+                                Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                            </p>
+                            <a href="catalog.html" class="accordion-catalog-main__link button button--primary">Перейти в
+                                каталог</a>
+                        </div>
+                    </div>
+
+                </div>
+                <div class="catalog-main__img-wrapper">
+                    <picture>
+                        <source media="(max-width:767px)" srcset="img/content/case-mobile-7.jpg">
+                        <img data-da=".accordion-catalog-main__item--1,991,1" src="img/content/case-7.jpg"
+                            alt="Трековые светильники" class="catalog-main__img tab-1 catalog-main__img--active">
+                    </picture>
+                    <picture>
+                        <source media="(max-width:767px)" srcset="img/content/case-mobile-5.jpg">
+                        <img data-da=".accordion-catalog-main__item--2,991,1" src="img/content/case-5.jpg"
+                            alt="Встраиваемые светильники" class="catalog-main__img tab-2">
+                    </picture>
+
+                    <picture>
+                        <source media="(max-width:767px)" srcset="img/content/case-mobile-6.jpg">
+                        <img data-da=".accordion-catalog-main__item--3,991,1" src="img/content/case-6.jpg"
+                            alt="Фигурные светильники" class="catalog-main__img tab-3">
+                    </picture>
+                    <picture>
+                        <source media="(max-width:767px)" srcset="img/content/case-mobile-2.jpg">
+                        <img data-da=".accordion-catalog-main__item--4,991,1" src="img/content/case-2.jpg"
+                            alt="Светильники Армстронг" class="catalog-main__img tab-4">
+                    </picture>
+                    <picture>
+                        <source media="(max-width:767px)" srcset="img/content/case-mobile-4.jpg">
+                        <img data-da=".accordion-catalog-main__item--5,991,1" src="img/content/case-4.jpg"
+                            alt="Светильники Армстронг с равномерной засветкой" class="catalog-main__img tab-5">
+                    </picture>
+                </div>
+            </div>
+        </section> -->
+
+        <section class="main__services services-main container">
+            <h2 class="services-main__title title--xl title--decorate">Услуги</h2>
+            <div class="services-main__accordion accordion-services-main">
+                <div class="accordion-services-main__item">
+                    <h3 class="accordion-services-main__title accordion-services-main__title--1">
+                        <button class="accordion-services-main__button">Изготовление
+                            светильников для торгового и общественного освещени</button>
+                    </h3>
+                    <p class="accordion-services-main__info">
+                        Мы ценим Ваше время, поэтому, коротко о главном.
+                        Наша компания была образована с целью предложить Российскому рынку профессиональные
+                        светотехнические решения для освещения магазинов, офисов и объектов общественно-развлекательного
+                        назначения. Сегодня мы поставляем осветительное оборудование различных ценовых категорий из
+                        стран Юго-Восточной Азии и Европы, а так же являемся дистрибьюторами лучших Российских
+                        производителей. А среди наших клиентов, сетевые и частные магазины одежды и обуви, продуктовые
+                        магазины, торговые и офисные центры, представители индустрии красоты и здоровья, кафе,
+                        рестораны, отели, коттеджные поселки и частные заказчики.
+
+                    </p>
+                </div>
+                <div class="accordion-services-main__item">
+                    <h3 class="accordion-services-main__title accordion-services-main__title--2">
+                        <button class="accordion-services-main__button">Поставки дизайнерского
+                            света от ведущих европейских производителей</button>
+                    </h3>
+                    <p class="accordion-services-main__info">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Cupiditate impedit alias qui quod
+                        aperiam architecto debitis? Iste molestias officiis repellat vel saepe fuga expedita explicabo
+                        voluptates nobis, aliquam voluptatem numquam.
+                        At incidunt a quas perferendis vel quidem quod odio numquam aliquam esse, dicta dolorem, rerum
+                        sit saepe aspernatur? Sapiente pariatur harum neque quaerat doloribus earum beatae provident
+                        optio aliquid tenetur.
+                    </p>
+                </div>
+                <div class="accordion-services-main__item">
+                    <h3 class="accordion-services-main__title accordion-services-main__title--3">
+                        <button class="accordion-services-main__button">Проектирование,
+                            светотехнические расчеты и разработка концепции освещения</button>
+                    </h3>
+                    <p class="accordion-services-main__info">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi repellendus error natus nihil
+                        commodi non sunt? Quam inventore repudiandae cum, nisi beatae molestias nobis nemo commodi
+                        quaerat animi praesentium tempora fugit iure aliquid quae explicabo! Harum, reprehenderit vero!
+                        Recusandae, non dolore ipsum harum quae culpa esse mollitia repudiandae tempora libero.
+                    </p>
+                </div>
+                <div class="accordion-services-main__item">
+                    <h3 class="accordion-services-main__title accordion-services-main__title--4">
+                        <button class="accordion-services-main__button">Модернизация
+                            светильников</button>
+                    </h3>
+                    <p class="accordion-services-main__info">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem, nihil excepturi earum animi
+                        laudantium repudiandae ab fugit dignissimos explicabo culpa totam, incidunt ipsum consequatur
+                        error repellendus debitis possimus sit quibusdam? Quisquam possimus deserunt eum, dolorum,
+                        doloribus, dolor asperiores tenetur dicta accusamus at ipsam consectetur mollitia tempora.
+                        Quisquam magnam minima doloribus ratione facere et tenetur similique voluptates, consectetur
+                        molestiae non, magni quam provident ad, rem minus?
+                    </p>
+                </div>
+                <div class="accordion-services-main__item">
+                    <h3 class="accordion-services-main__title accordion-services-main__title--5">
+                        <button class="accordion-services-main__button">Ремонт светодиодных
+                            светильников</button>
+                    </h3>
+                    <p class="accordion-services-main__info">
+                        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quibusdam vitae pariatur vel earum
+                        atque quisquam eum consequuntur ipsa amet necessitatibus? Molestias ut incidunt quae vero harum
+                        fugiat, aliquam nemo ipsa labore dolore quos earum tempora omnis doloribus reiciendis a nostrum.
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla eveniet fugit, iure reiciendis
+                        doloremque cupiditate voluptatum numquam, magnam quibusdam inventore rerum, tempore consectetur
+                        itaque dolore commodi reprehenderit adipisci dolorum aliquam.
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <section class="main-new new-main container">
+            <h2 class="new-main__title title--xl title--decorate">Новинки</h2>
+            <div class="new-main__cards-wrapper">
+                <div class="new-main__item-card item-card">
+                    <div class="item-card__header"><span class="item-card__label">Вт</span></div>
+                    <div class="item-card__img-wrapper">
+                        <img src="img/content/progect-form-1.png" alt="" class="item-card__img">
+                    </div>
+                    <div class="item-card__text-wrapper">
+                        <h3 class="item-card__title">Дизайнерский светильник изготавливаемый по проекту</h3>
+                        <ul class="item-card__info-list">
+                            <li class="item-card__info-item">Длинна до 3 метров.</li>
+                            <li class="item-card__info-item">Углы поворота между секторами по проекту.</li>
+                            <li class="item-card__info-item">Мощность рассчитывается индивидуально.</li>
+                        </ul>
+                        <p class="item-card__price">21 300 &#x20bd;</p>
+                    </div>
+                    <div class="item-card__footer">
+                        <a href="#" class="item-card__details button button--primary">Подробнее</a>
+                        <button class="item-card__add-button">+</button>
+                    </div>
+                </div>
+                <div class="new-main__item-card item-card">
+                    <div class="item-card__header"><span class="item-card__label">Вт</span></div>
+                    <div class="item-card__img-wrapper">
+                        <img src="img/content/progect-form-2.png" alt="" class="item-card__img">
+                    </div>
+                    <div class="item-card__text-wrapper">
+                        <h3 class="item-card__title">Дизайнерский светильник изготавливаемый по проекту</h3>
+                        <ul class="item-card__info-list">
+                            <li class="item-card__info-item">Длинна до 3 метров.</li>
+                            <li class="item-card__info-item">Углы поворота между секторами по проекту.</li>
+                            <li class="item-card__info-item">Мощность рассчитывается индивидуально.</li>
+                        </ul>
+                        <p class="item-card__price">41 500 &#x20bd;</p>
+                    </div>
+                    <div class="item-card__footer">
+                        <a href="#" class="item-card__details button button--primary">Подробнее</a>
+                        <button class="item-card__add-button">+</button>
+                    </div>
+                </div>
+                <div class="new-main__item-card item-card">
+                    <div class="item-card__header"><span class="item-card__label">Вт</span></div>
+                    <div class="item-card__img-wrapper">
+                        <img src="img/content/progect-form-1.png" alt="" class="item-card__img">
+                    </div>
+                    <div class="item-card__text-wrapper">
+                        <h3 class="item-card__title">Дизайнерский светильник изготавливаемый по проекту</h3>
+                        <ul class="item-card__info-list">
+                            <li class="item-card__info-item">Длинна до 3 метров.</li>
+                            <li class="item-card__info-item">Углы поворота между секторами по проекту.</li>
+                            <li class="item-card__info-item">Мощность рассчитывается индивидуально.</li>
+                        </ul>
+                        <p class="item-card__price">21 800 &#x20bd;</p>
+                    </div>
+                    <div class="item-card__footer">
+                        <a href="#" class="item-card__details button button--primary">Подробнее</a>
+                        <button class="item-card__add-button">+</button>
+                    </div>
+                </div>
+                <div class="new-main__item-card item-card">
+                    <div class="item-card__header"><span class="item-card__label">Вт</span></div>
+                    <div class="item-card__img-wrapper">
+                        <img src="img/content/progect-form-1.png" alt="" class="item-card__img">
+                    </div>
+                    <div class="item-card__text-wrapper">
+                        <h3 class="item-card__title">Дизайнерский светильник изготавливаемый по проекту</h3>
+                        <ul class="item-card__info-list">
+                            <li class="item-card__info-item">Длинна до 3 метров.</li>
+                            <li class="item-card__info-item">Углы поворота между секторами по проекту.</li>
+                            <li class="item-card__info-item">Мощность рассчитывается индивидуально.</li>
+                        </ul>
+                        <p class="item-card__price">37 900 &#x20bd;</p>
+                    </div>
+                    <div class="item-card__footer">
+                        <a href="#" class="item-card__details button button--primary">Подробнее</a>
+                        <button class="item-card__add-button">+</button>
+                    </div>
+                </div>
+            </div>
+            <a href="catalog.html" class="new-main__link button button--secondary">Перейти в каталог</a>
+        </section>
+
+        <section class="main__downloads downloads-main container">
+            <h2 class="downloads-main__title">Файлы для скачивания</h2>
+            <div class="downloads-main__content-wrapper">
+                <div class="downloads-main__row">
+                    <h3 class="downloads-main__file-name">Последние версии каталогов</h3>
+                    <a href="#" class="downloads-main__view">Посмотреть</a>
+                    <a href="#" class="downloads-main__download"><span>Скачать</span></a>
+                </div>
+                <div class="downloads-main__row">
+                    <h3 class="downloads-main__file-name">Технические спецификации</h3>
+                    <a href="#" class="downloads-main__view">Посмотреть</a>
+                    <a href="#" class="downloads-main__download"><span>Скачать</span></a>
+                </div>
+                <div class="downloads-main__row">
+                    <h3 class="downloads-main__file-name">IES-файлы и прочая документация</h3>
+                    <a href="#" class="downloads-main__view">Посмотреть</a>
+                    <a href="#" class="downloads-main__download"><span>Скачать</span></a>
+                </div>
+                <div class="downloads-main__row">
+                    <h3 class="downloads-main__file-name">Lorem, ipsum dolor.</h3>
+                    <a href="#" class="downloads-main__view">Посмотреть</a>
+                    <a href="#" class="downloads-main__download"><span>Скачать</span></a>
+                </div>
+                <div class="downloads-main__row">
+                    <h3 class="downloads-main__file-name">Lorem ipsum dolor sit amet.</h3>
+                    <a href="#" class="downloads-main__view">Посмотреть</a>
+                    <a href="#" class="downloads-main__download"><span>Скачать</span></a>
+                </div>
+                <div class="downloads-main__blur"></div>
+            </div>
+        </section>
+
+        <section class="main__feedback feedback-main container">
+            <div class="feedback-main__wrapper">
+                <h2 class="feedback-main__title">Остались вопросы и нужна консультация?</h2>
+                <form class="feedback-main__form">
+                    <label for="name" class="visually-hidden">Ваше имя</label>
+                    <input class="feedback-main__input" id="name" type="text" name="name" placeholder="Ваше имя*"
+                        required>
+                    <label for="email" class="visually-hidden">Ваш e-mail</label>
+                    <input class="feedback-main__input" id="email" type="email" name="e-mail" placeholder="Ваш e-mail*"
+                        required>
+                    <label for="message" class="visually-hidden">Сообщение</label>
+                    <textarea class="feedback-main__input feedback-main__message" id="message" name="message"
+                        placeholder="Сообщение"></textarea>
+                    <button class="feedback-main__submit-btn button button--secondary" type="submit">Отправить</button>
+
+                </form>
+            </div>
+        </section>
+    </main>
+
+
+
+    <footer class="footer">
+        <div class="footer__wrapper container">
+            <div class="footer__column footer__column--logo">
+                <img class="footer__logo" src="img/content/logo-footer.png" alt="Логотип I-lights" width="66"
+                    height="42">
+                <div data-da=".footer__wrapper,991,last" class="footer__copyright">
+                    &copy; Technolight 2015-2021
+                </div>
+            </div>
+
+            <div class="footer__column footer__column--catalog">
+                <h2 class="footer__title">Каталог товаров</h2>
+                <ul class="footer__catalog-list">
+                    <li class="footer__catalog-item">
+                        <a href="#">Трековые светильники</a>
+                    </li>
+                    <li class="footer__catalog-item">
+                        <a href="#">Встраиваемые светильники</a>
+                    </li>
+                    <li class="footer__catalog-item">
+                        <a href="#">Профильные светильники</a>
+                    </li>
+                    <li class="footer__catalog-item">
+                        <a href="#">Фигурные светильники</a>
+                    </li>
+                    <li class="footer__catalog-item">
+                        <a href="#">Светильники Армстронг</a>
+                    </li>
+                    <li class="footer__catalog-item">
+                        <a href="#">Армстронг с равномерной засветкой</a>
+                    </li>
+                    <li class="footer__catalog-item">
+                        <a href="#">Произовдители</a>
+                    </li>
+                </ul>
+            </div>
+
+            <div class="footer__column footer__column--order">
+                <ul class="footer__order-list">
+                    <li class="footer__order-item">
+                        <a href="#">Как заказать</a>
+                    </li>
+                    <li class="footer__order-item">
+                        <a href="#">Оплата</a>
+                    </li>
+                    <li class="footer__order-item">
+                        <a href="#">Доставка</a>
+                    </li>
+                    <li class="footer__order-item">
+                        <a href="#">Реквизиты компании</a>
+                    </li>
+                    <li class="footer__order-item">
+                        <a href="#">Правовая информация</a>
+                    </li>
+                    <li class="footer__order-item">
+                        <a href="#">FAQ</a>
+                    </li>
+                </ul>
+            </div>
+
+            <div class="footer__column footer__column--contacts">
+                <h2 class="footer__title">Контакты</h2>
+                <ul class="footer__contacts-list">
+                    <li class="footer__contacts-item">
+                        <a href="#"><span class="icon-location footer__contacts-icon"></span>место магазина</a>
+                    </li>
+                    <li class="footer__contacts-item footer__contacts-item--phone">
+                        <a href="tel:+74952335557"><span class="icon-phone footer__contacts-icon"></span>+7 (495) 233 55
+                            57</a>
+                    </li>
+                    <li class="footer__contacts-item footer__contacts-item--email">
+                        <a href="mailto:info@i-lights.ru"><span
+                                class="icon-email footer__contacts-icon"></span>info@i-lights.ru</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </footer>
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+    <script src="js/swiper-slider.js"></script>
+    <script src="js/dynamicAdapt.js"></script>
+    <script src="js/common.js"></script>
+    <script src="js/main.js"></script>
+</body>
+
+</html>
