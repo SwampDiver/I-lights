@@ -1,0 +1,109 @@
+.info-about {
+    margin-bottom: 15px;
+
+    // .info-about__title
+
+    &__title {
+        margin-bottom: 40px;
+    }
+
+    // .info-about__list
+
+    &__list {
+        display: flex;
+        margin-bottom: 20px;
+        border-bottom: 1px solid $light;
+
+        @media (max-width: $bp-2) {
+            flex-direction: column;
+            border-bottom: 0;
+        }
+    }
+
+    // .info-about__button
+
+    &__button {
+        position: relative;
+        border: none;
+        padding: 7px 35px;
+        font-weight: 500;
+        font-size: 16px;
+        line-height: 40px / 16px * 100%;
+        color: $text;
+        background-color: transparent;
+        transition: $transition;
+        cursor: pointer;
+
+        &::after {
+            content: "";
+            position: absolute;
+            right: 0;
+            top: 10px;
+            display: none;
+            width: 11px;
+            height: 7px;
+            background: url("../../img/icons/arrow-down.svg") center/cover no-repeat;
+
+            @media (max-width: $bp-2) {
+                display: block;
+            }
+        }
+
+        // .info-about__button--active
+
+        &--active {
+            color: $white;
+            background-color: $primary;
+        }
+
+        @media (max-width: $bp-2) {
+            margin-bottom: 15px;
+            border-bottom: 1px solid $light;
+            padding-bottom: 15px;
+            padding-left: 0;
+            width: 100%;
+            font-weight: 700;
+            font-size: 14px;
+            line-height: 18px / 14px * 100%;
+            text-align: left;
+
+            &--active {
+                color: $text;
+                background-color: transparent;
+
+                &::after {
+                    background: url("../../img/icons/arrow-up.svg") center/cover no-repeat;
+                }
+            }
+
+            &--active~.info-about__wrapper {
+                max-height: 1000px;
+            }
+        }
+    }
+
+    // .info-about__wrapper
+
+    &__wrapper {
+        display: none;
+
+        p {
+            margin-bottom: 25px;
+            font-weight: 300;
+            line-height: 24px / 14px * 100%;
+        }
+
+        // .info-about__wrapper--active
+
+        &--active {
+            display: block;
+        }
+
+        @media (max-width: $bp-2) {
+            display: block;
+            overflow: hidden;
+            max-height: 0;
+            transition: $transition-slow;
+        }
+    }
+}
