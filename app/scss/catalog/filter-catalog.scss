@@ -13,10 +13,6 @@
         margin-bottom: 20px;
     }
 
-    // .filter-catalog__item
-
-    &__item {}
-
     // .filter-catalog__title
 
     &__title {
@@ -31,8 +27,8 @@
         border: none;
         width: 13px;
         height: 13px;
-        background-color: transparent;
         background: url("../../img/icons/filter.svg") center/cover no-repeat;
+        background-color: transparent;
         cursor: pointer;
     }
 

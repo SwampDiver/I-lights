@@ -1,10 +1,6 @@
 .catalog {
     margin-bottom: 50px;
 
-    // .catalog__info
-
-    &__info {}
-
     // .catalog__title
 
     &__title {
@@ -103,7 +99,6 @@
             justify-self: center;
             grid-column-gap: 10px;
             grid-template-columns: 1fr 1fr;
-
         }
     }
 
@@ -128,10 +123,6 @@
         margin: 0 auto;
         width: 170px;
     }
-
-    // .catalog__page-number
-
-    &__page-number {}
 
     // .catalog__page-button
 
@@ -163,16 +154,8 @@
         pointer-events: none;
     }
 
-    &__icon {}
-
-    // .catalog__icon--prev
-
     &__icon--prev {
         opacity: 0.3;
         transform: rotate(180deg);
     }
-
-    // .catalog__icon--next
-
-    &__icon--next {}
 }
