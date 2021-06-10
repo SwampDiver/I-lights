@@ -1,8 +1,4 @@
 .info-delivery {
-    @media (max-width: $bp-2) {
-        margin-bottom: 250px;
-    }
-
     // .info-delivery__title
 
     &__title {
@@ -214,5 +210,9 @@
         @media (max-width: $bp-4) {
             width: 100%;
         }
+    }
+
+    @media (max-width: $bp-2) {
+        margin-bottom: 250px;
     }
 }
