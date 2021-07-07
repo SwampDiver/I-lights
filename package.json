@@ -6,8 +6,8 @@
   "author": "",
   "license": "ISC",
   "devDependencies": {
-    "browser-sync": "^2.26.13",
-    "browserslist": "^4.16.0",
+    "browser-sync": "^2.27.3",
+    "browserslist": "^4.16.6",
     "del": "^6.0.0",
     "gulp": "^4.0.2",
     "gulp-autoprefixer": "^7.0.1",
@@ -17,12 +17,13 @@
     "gulp-posthtml": "^3.0.5",
     "gulp-sass": "^4.1.0",
     "gulp-svgstore": "^7.0.1",
+    "gulp-ttf2woff2": "^4.0.1",
     "gulp-uglify-es": "^2.0.0",
     "gulp-webp": "^4.0.1",
     "imagemin-jpeg-recompress": "^7.0.0",
     "mixitup": "^3.3.1",
-    "posthtml-include": "^1.6.0",
-    "stylelint": "^13.8.0",
+    "posthtml-include": "^1.7.1",
+    "stylelint": "^13.13.1",
     "stylelint-declaration-block-no-ignored-properties": "^2.3.0",
     "stylelint-order": "^4.1.0",
     "stylelint-scss": "^3.18.0"
@@ -31,6 +32,6 @@
     "defaults"
   ],
   "dependencies": {
-    "nouislider": "^15.1.1"
+    "nouislider": "^15.2.0"
   }
 }
