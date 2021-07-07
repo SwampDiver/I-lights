@@ -33,8 +33,12 @@
             top: 10px;
             z-index: -1;
             width: 1px;
-            height: 77px;
+            height: 70%;
             background: $light;
+
+            @media (max-width: $bp-2) {
+                display: none;
+            }
         }
 
         &:last-child::after {
