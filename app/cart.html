@@ -3,19 +3,26 @@
 
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="css/iconsfont.css">
-    <link rel="stylesheet" href="css/nouislider.min.css">
+    <link rel="preload" href="fonts/montserrat-v15-latin_cyrillic-700.woff2" as="font" crossorigin="anonymous" />
+    <link rel="preload" href="fonts/montserrat-v15-latin_cyrillic-600.woff" as="font" crossorigin="anonymous" />
+    <link rel="preload" href="fonts/montserrat-v15-latin_cyrillic-500.woff2" as="font" crossorigin="anonymous" />
+    <link rel="preload" href="fonts/montserrat-v15-latin_cyrillic-300.woff2" as="font" crossorigin="anonymous" />
+    <link rel="preload" href="fonts/montserrat-v15-latin_cyrillic-regular.woff2" as="font" crossorigin="anonymous" />
+    <link rel="preload" href="fonts/icons.woff2" as="font" crossorigin="anonymous" />
     <link rel="stylesheet" href="css/style.min.css">
-    <title>I-lights | Каталог</title>
+    <link rel="icon" href="https://faviconka.ru/ico/1/faviconka.ru_1_107561.ico?v=2">
+    <title>I-lights | Подборка</title>
 </head>
 
 <body>
     <header class="header">
         <div class="header__wrapper container">
             <a href="index.html" class="header__logo-link">
-                <img src="img/content/logo.png" alt="Логотип I-lights" class="header__logo" width="75" height="58">
+                <picture>
+                    <source type="image/webp" srcset="img/webp/logo.webp">
+                    <img src="img/content/logo.png" alt="Логотип I-lights" class="header__logo" width="75" height="58">
+                </picture>
             </a>
 
             <nav class="header__nav nav-header">
@@ -40,7 +47,7 @@
                     </li>
                 </ul>
             </nav>
-            <button class="header__menu-icon icon-menu" type="button">
+            <button class="header__menu-icon icon-menu" type="button" aria-label="Мобильное меню">
                 <span></span>
                 <span></span>
                 <span></span>
@@ -89,8 +96,11 @@
 
                 <div class="info-cart__item-wrapper cart-item">
                     <div class="cart-item__image-wrapper">
-                        <img class="cart-item__image" src="img/content/item.jpg" width="98" height="98"
-                            alt="Трековый светильник EVO L">
+                        <picture>
+                            <source type="image/webp" srcset="img/webp/item.webp">
+                            <img class="cart-item__image" src="img/content/item.jpg" width="98" height="98"
+                                alt="Трековый светильник EVO L">
+                        </picture>
                     </div>
                     <div class="cart-item__info">
                         <h2 class="cart-item__title">
@@ -137,8 +147,11 @@
 
                 <div class="info-cart__item-wrapper cart-item">
                     <div class="cart-item__image-wrapper">
-                        <img class="cart-item__image" src="img/content/item-cart.png" width="123" height="69"
-                            alt="Дизайнерский светильник">
+                        <picture>
+                            <source type="image/webp" srcset="img/webp/item-cart.webp">
+                            <img class="cart-item__image" src="img/content/item-cart.png" width="123" height="69"
+                                alt="Дизайнерский светильник">
+                        </picture>
                     </div>
                     <div class="cart-item__info">
                         <h2 class="cart-item__title">
@@ -170,7 +183,8 @@
                     </div>
                     <div class="cart-item__price">от 41 500 &#x20bd;</div>
                     <div class="cart-item__remove">
-                        <button class="cart-item__close-desktop"><span class="cart-item__cross-icon icon-cross"></span> Удалить</button>
+                        <button class="cart-item__close-desktop"><span class="cart-item__cross-icon icon-cross"></span>
+                            Удалить</button>
                     </div>
                 </div>
 
@@ -182,8 +196,11 @@
                 </div>
 
                 <div class="info-cart__buttons-wrapper">
-                    <button class="info-cart__order-button info-cart__order-button--transparent button">Отправить подборку на почту</button>
-                    <button class="info-cart__order-button button button--secondary">Отправить заявку на расчет</button>
+                    <button class="info-cart__order-button info-cart__order-button--mail button">Отправить
+                        подборку на почту</button>
+                    <button
+                        class="info-cart__order-button info-cart__order-button--calc button button--secondary">Отправить
+                        заявку на расчет</button>
                 </div>
             </section>
         </main>
@@ -191,8 +208,11 @@
         <footer class="footer">
             <div class="footer__wrapper container">
                 <div class="footer__column footer__column--logo">
-                    <img class="footer__logo" src="img/content/logo-footer.png" alt="Логотип I-lights" width="66"
-                        height="42">
+                    <picture>
+                        <source type="image/webp" srcset="img/webp/logo-footer.webp">
+                        <img class="footer__logo" src="img/content/logo-footer.png" width="66" height="42"
+                            loading="lazy" alt="Логотип I-lights">
+                    </picture>
                     <div data-da=".footer__wrapper,991,last" class="footer__copyright">
                         &copy; Technolight 2015-2021
                     </div>
@@ -268,8 +288,76 @@
             </div>
         </footer>
     </div>
-    <script src="js/dynamicAdapt.js"></script>
 
+    <div class="cart-modal modal-calc">
+        <div class="cart-modal__window">
+            <button data-close class="cart-modal__close-btn icon-cross"></button>
+            <h2 class="cart-modal__title title--lg">Введите следующие данные</h2>
+            <form class="cart-modal__form">
+
+                <label class="visually-hidden" for="calc-modal-name">Ваше имя</label>
+                <input class="cart-modal__input" type="text" id="calc-modal-name" placeholder="Ваше имя*">
+
+                <label class="visually-hidden" for="calc-modal-email">Ваше e-mail</label>
+                <input class="cart-modal__input" type="email" id="calc-modal-email" placeholder="Ваш e-mail*">
+
+                <label class="visually-hidden" for="calc-modal-tel">Ваш телефон</label>
+                <input class="cart-modal__input" type="tel" id="calc-modal-tel" placeholder="Ваш телефон*">
+
+                <input class="cart-modal__checkbox visually-hidden" type="checkbox" name="checkbox"
+                    id="calc-modal-check" checked>
+                <label class="cart-modal__label" for="calc-modal-check">
+                    Даю согласие на <a href="#" class="cart-modal__link">обработку персональных данных</a>
+                </label>
+
+                <button class="cart-modal__button cart-modal__button--calc button button--secondary"
+                    type="submit">Отправить</button>
+            </form>
+        </div>
+    </div>
+
+    <div class="cart-modal-finish modal-calc-finish">
+        <div class="cart-modal-finish__window">
+            <button data-close class="cart-modal-finish__close-btn cart-modal__close-btn icon-cross"></button>
+            <p class="cart-modal-finish__text-lg">Спасибо!</p>
+            <p class="cart-modal-finish__text-sm">Выша заявка принята в ближайшее время наш менеджер с Вами свяжется.
+            </p>
+        </div>
+    </div>
+
+
+    <div class="cart-modal modal-mail">
+        <div class="cart-modal__window">
+            <button data-close class="cart-modal__close-btn icon-cross"></button>
+            <h2 class="cart-modal__title title--lg">Введите адресс электронной почты</h2>
+            <form class="cart-modal__form">
+                <label class="visually-hidden" for="mail-modal-email">Ваше e-mail</label>
+                <input class="cart-modal__input" type="email" id="mail-modal-email" placeholder="Ваш e-mail*">
+
+                <input class="cart-modal__checkbox visually-hidden" name="accept" type="checkbox" id="mail-modal-check"
+                    checked>
+                <label class="cart-modal__label" for="mail-modal-check">
+                    Даю согласие на <a href="#" class="cart-modal__link">обработку персональных данных</a>
+                </label>
+
+                <button class="cart-modal__button cart-modal__button--mail button button--secondary"
+                    type="submit">Отправить</button>
+
+            </form>
+        </div>
+    </div>
+
+
+    <div class="cart-modal-finish modal-mail-finish">
+        <div class="cart-modal-finish__window">
+            <button data-close class="cart-modal-finish__close-btn cart-modal__close-btn icon-cross"></button>
+            <p class="cart-modal-finish__text-lg">Спасибо!</p>
+            <p class="cart-modal-finish__text-md">Проверьте почтовый ящик!</p>
+            <p class="cart-modal-finish__text-sm">На указанную почту была выслана подборка с выбранными товарами</p>
+        </div>
+    </div>
+
+    <script src="js/dynamicAdapt.js"></script>
     <script src="js/common.js"></script>
     <script src="js/cart.js"></script>
 
