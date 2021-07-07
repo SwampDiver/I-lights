@@ -3,11 +3,13 @@
 
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="css/iconsfont.css">
+    <link rel="preload" href="fonts/montserrat-v15-latin_cyrillic-700.woff2" as="font" crossorigin="anonymous" />
+    <link rel="preload" href="fonts/montserrat-v15-latin_cyrillic-500.woff2" as="font" crossorigin="anonymous" />
+    <link rel="preload" href="fonts/montserrat-v15-latin_cyrillic-regular.woff2" as="font" crossorigin="anonymous" />
     <link rel="stylesheet" href="css/nouislider.min.css">
     <link rel="stylesheet" href="css/style.min.css">
+    <link rel="icon" href="https://faviconka.ru/ico/1/faviconka.ru_1_107561.ico?v=2">
     <title>I-lights | Каталог</title>
 </head>
 
@@ -15,7 +17,10 @@
     <header class="header">
         <div class="header__wrapper container">
             <a href="index.html" class="header__logo-link">
-                <img src="img/content/logo.png" alt="Логотип I-lights" class="header__logo" width="75" height="58">
+                <picture>
+                    <source type="image/webp" srcset="img/webp/logo.webp">
+                    <img src="img/content/logo.png" alt="Логотип I-lights" class="header__logo" width="75" height="58">
+                </picture>
             </a>
 
             <nav class="header__nav nav-header">
@@ -39,7 +44,7 @@
                     </li>
                 </ul>
             </nav>
-            <button class="header__menu-icon icon-menu" type="button">
+            <button class="header__menu-icon icon-menu" type="button" aria-label="Мобильное меню">
                 <span></span>
                 <span></span>
                 <span></span>
@@ -132,7 +137,14 @@
                             <div class="catalog__item item-card mix category-a category-d category-f">
                                 <div class="item-card__header"><span class="item-card__label">Вт</span></div>
                                 <div class="item-card__img-wrapper">
-                                    <img src="img/content/progect-form-2.png" alt="светильник" class="item-card__img">
+                                    <picture>
+                                        <source type="image/webp" media="(max-width: 767px)" srcset="img/webp/progect-form-mobile-2.webp">
+                                        <source type="image/webp" srcset="img/webp/progect-form-2.webp">
+                                        <source media="(max-width:767px)" srcset="img/content/progect-form-mobile-2.png"
+                                            width="68" height="96">
+                                        <img src="img/content/progect-form-2.png" width="128" height="181"
+                                            alt="светильник" class="item-card__img">
+                                    </picture>
                                 </div>
                                 <div class="item-card__text-wrapper">
                                     <h3 class="item-card__title">Дизайнерский светильник изготавливаемый по проекту</h3>
@@ -151,7 +163,14 @@
                             <div class="catalog__item item-card mix category-c category-d category-e">
                                 <div class="item-card__header"><span class="item-card__label">Вт</span></div>
                                 <div class="item-card__img-wrapper">
-                                    <img src="img/content/progect-form-1.png" alt="светильник" class="item-card__img">
+                                    <picture>
+                                        <source type="image/webp" media="(max-width: 767px)" srcset="img/webp/progect-form-mobile-1.webp">
+                                        <source type="image/webp" srcset="img/webp/progect-form-1.webp">
+                                        <source media="(max-width:767px)" srcset="img/content/progect-form-mobile-1.png"
+                                            width="131" height="49">
+                                        <img src="img/content/progect-form-1.png" width="258" height="96"
+                                            alt="светильник" class="item-card__img">
+                                    </picture>
                                 </div>
                                 <div class="item-card__text-wrapper">
                                     <h3 class="item-card__title">Дизайнерский светильник изготавливаемый по проекту</h3>
@@ -170,7 +189,14 @@
                             <div class="catalog__item item-card mix category-a category-e">
                                 <div class="item-card__header"><span class="item-card__label">Вт</span></div>
                                 <div class="item-card__img-wrapper">
-                                    <img src="img/content/progect-form-1.png" alt="светильник" class="item-card__img">
+                                    <picture>
+                                        <source type="image/webp" media="(max-width: 767px)" srcset="img/webp/progect-form-mobile-1.webp">
+                                        <source type="image/webp" srcset="img/webp/progect-form-1.webp">
+                                        <source media="(max-width:767px)" srcset="img/content/progect-form-mobile-1.png"
+                                            width="131" height="49">
+                                        <img src="img/content/progect-form-1.png" width="258" height="96"
+                                            alt="светильник" class="item-card__img">
+                                    </picture>
                                 </div>
                                 <div class="item-card__text-wrapper">
                                     <h3 class="item-card__title">Дизайнерский светильник изготавливаемый по проекту</h3>
@@ -189,7 +215,14 @@
                             <div class="catalog__item item-card mix category-b category-e category-f">
                                 <div class="item-card__header"><span class="item-card__label">Вт</span></div>
                                 <div class="item-card__img-wrapper">
-                                    <img src="img/content/progect-form-2.png" alt="светильник" class="item-card__img">
+                                    <picture>
+                                        <source type="image/webp" media="(max-width: 767px)" srcset="img/webp/progect-form-mobile-2.webp">
+                                        <source type="image/webp" srcset="img/webp/progect-form-2.webp">
+                                        <source media="(max-width:767px)" srcset="img/content/progect-form-mobile-2.png"
+                                            width="68" height="96">
+                                        <img src="img/content/progect-form-2.png" width="128" height="181"
+                                            alt="светильник" class="item-card__img">
+                                    </picture>
                                 </div>
                                 <div class="item-card__text-wrapper">
                                     <h3 class="item-card__title">Дизайнерский светильник изготавливаемый по проекту</h3>
@@ -208,7 +241,14 @@
                             <div class="catalog__item item-card mix category-a category-c">
                                 <div class="item-card__header"><span class="item-card__label">Вт</span></div>
                                 <div class="item-card__img-wrapper">
-                                    <img src="img/content/progect-form-1.png" alt="светильник" class="item-card__img">
+                                    <picture>
+                                        <source type="image/webp" media="(max-width: 767px)" srcset="img/webp/progect-form-mobile-1.webp">
+                                        <source type="image/webp" srcset="img/webp/progect-form-1.webp">
+                                        <source media="(max-width:767px)" srcset="img/content/progect-form-mobile-1.png"
+                                            width="131" height="49">
+                                        <img src="img/content/progect-form-1.png" width="258" height="96"
+                                            alt="светильник" class="item-card__img">
+                                    </picture>
                                 </div>
                                 <div class="item-card__text-wrapper">
                                     <h3 class="item-card__title">Дизайнерский светильник изготавливаемый по проекту</h3>
@@ -227,7 +267,14 @@
                             <div class="catalog__item item-card mix category-a category-d">
                                 <div class="item-card__header"><span class="item-card__label">Вт</span></div>
                                 <div class="item-card__img-wrapper">
-                                    <img src="img/content/progect-form-1.png" alt="светильник" class="item-card__img">
+                                    <picture>
+                                        <source type="image/webp" media="(max-width: 767px)" srcset="img/webp/progect-form-mobile-1.webp">
+                                        <source type="image/webp" srcset="img/webp/progect-form-1.webp">
+                                        <source media="(max-width:767px)" srcset="img/content/progect-form-mobile-1.png"
+                                            width="131" height="49">
+                                        <img src="img/content/progect-form-1.png" width="258" height="96"
+                                            alt="светильник" class="item-card__img">
+                                    </picture>
                                 </div>
                                 <div class="item-card__text-wrapper">
                                     <h3 class="item-card__title">Дизайнерский светильник изготавливаемый по проекту</h3>
@@ -246,7 +293,14 @@
                             <div class="catalog__item item-card mix category-b category-c">
                                 <div class="item-card__header"><span class="item-card__label">Вт</span></div>
                                 <div class="item-card__img-wrapper">
-                                    <img src="img/content/progect-form-2.png" alt="светильник" class="item-card__img">
+                                    <picture>
+                                        <source type="image/webp" media="(max-width: 767px)" srcset="img/webp/progect-form-mobile-2.webp">
+                                        <source type="image/webp" srcset="img/webp/progect-form-2.webp">
+                                        <source media="(max-width:767px)" srcset="img/content/progect-form-mobile-2.png"
+                                            width="68" height="96">
+                                        <img src="img/content/progect-form-2.png" width="128" height="181"
+                                            alt="светильник" class="item-card__img">
+                                    </picture>
                                 </div>
                                 <div class="item-card__text-wrapper">
                                     <h3 class="item-card__title">Дизайнерский светильник изготавливаемый по проекту</h3>
@@ -265,7 +319,14 @@
                             <div class="catalog__item item-card mix category-d category-e">
                                 <div class="item-card__header"><span class="item-card__label">Вт</span></div>
                                 <div class="item-card__img-wrapper">
-                                    <img src="img/content/progect-form-1.png" alt="светильник" class="item-card__img">
+                                    <picture>
+                                        <source type="image/webp" media="(max-width: 767px)" srcset="img/webp/progect-form-mobile-1.webp">
+                                        <source type="image/webp" srcset="img/webp/progect-form-1.webp">
+                                        <source media="(max-width:767px)" srcset="img/content/progect-form-mobile-1.png"
+                                            width="131" height="49">
+                                        <img src="img/content/progect-form-1.png" width="258" height="96"
+                                            alt="светильник" class="item-card__img">
+                                    </picture>
                                 </div>
                                 <div class="item-card__text-wrapper">
                                     <h3 class="item-card__title">Дизайнерский светильник изготавливаемый по проекту</h3>
@@ -284,7 +345,14 @@
                             <div class="catalog__item item-card mix category-b category-d category-f">
                                 <div class="item-card__header"><span class="item-card__label">Вт</span></div>
                                 <div class="item-card__img-wrapper">
-                                    <img src="img/content/progect-form-1.png" alt="светильник" class="item-card__img">
+                                    <picture>
+                                        <source type="image/webp" media="(max-width: 767px)" srcset="img/webp/progect-form-mobile-1.webp">
+                                        <source type="image/webp" srcset="img/webp/progect-form-1.webp">
+                                        <source media="(max-width:767px)" srcset="img/content/progect-form-mobile-1.png"
+                                            width="131" height="49">
+                                        <img src="img/content/progect-form-1.png" width="258" height="96"
+                                            alt="светильник" class="item-card__img">
+                                    </picture>
                                 </div>
                                 <div class="item-card__text-wrapper">
                                     <h3 class="item-card__title">Дизайнерский светильник изготавливаемый по проекту</h3>
@@ -334,8 +402,11 @@
         <footer class="footer">
             <div class="footer__wrapper container">
                 <div class="footer__column footer__column--logo">
-                    <img class="footer__logo" src="img/content/logo-footer.png" alt="Логотип I-lights" width="66"
-                        height="42">
+                    <picture>
+                        <source type="image/webp" srcset="img/webp/logo-footer.webp">
+                        <img class="footer__logo" src="img/content/logo-footer.png" width="66" height="42"
+                            loading="lazy" alt="Логотип I-lights">
+                    </picture>
                     <div data-da=".footer__wrapper,991,last" class="footer__copyright">
                         &copy; Technolight 2015-2021
                     </div>

@@ -1,12 +1,13 @@
 <!DOCTYPE html>
 <html lang="ru">
-
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="css/iconsfont.css">
+    <link rel="preload" href="fonts/montserrat-v15-latin_cyrillic-700.woff2" as="font" crossorigin="anonymous"/>
+    <link rel="preload" href="fonts/montserrat-v15-latin_cyrillic-500.woff2" as="font" crossorigin="anonymous"/>
+    <link rel="preload" href="fonts/montserrat-v15-latin_cyrillic-regular.woff2" as="font" crossorigin="anonymous"/>
     <link rel="stylesheet" href="css/style.min.css">
+    <link rel="icon" href="https://faviconka.ru/ico/1/faviconka.ru_1_107561.ico?v=2">
     <title>I-lights | Услуги</title>
 </head>
 
@@ -14,7 +15,10 @@
     <header class="header">
         <div class="header__wrapper container">
             <a href="index.html" class="header__logo-link">
-                <img src="img/content/logo.png" alt="Логотип I-lights" class="header__logo" width="75" height="58">
+                <picture>
+                    <source type="image/webp" srcset="img/webp/logo.webp">
+                    <img src="img/content/logo.png" alt="Логотип I-lights" class="header__logo" width="75" height="58">
+                </picture>
             </a>
 
             <nav class="header__nav nav-header">
@@ -38,7 +42,7 @@
                     </li>
                 </ul>
             </nav>
-            <button class="header__menu-icon icon-menu" type="button">
+            <button class="header__menu-icon icon-menu" type="button" aria-label="Мобильное меню">
                 <span></span>
                 <span></span>
                 <span></span>
@@ -242,34 +246,46 @@
 
                 <div class="solutions__img-wrapper">
                     <picture>
+                        <source type="image/webp" media="(max-width: 767px)" srcset="img/webp/case-mobile-7.webp">
+                        <source type="image/webp" srcset="img/webp/case-7.webp">
                         <source media="(max-width:767px)" srcset="img/content/case-mobile-7.jpg">
-                        <img data-da=".solutions__item--1,991,1" src="img/content/case-7.jpg"
-                            alt="Светильники для магазинов" class="solutions__img solutions__img--active tab-1">
+                        <img data-da=".solutions__item--1,991,1" src="img/content/case-7.jpg" class="solutions__img solutions__img--active tab-1"
+                        width="962" height="486" alt="Светильники для магазинов">
                     </picture>
                     <picture>
+                        <source type="image/webp" media="(max-width: 767px)" srcset="img/webp/case-mobile-2.webp">
+                        <source type="image/webp" srcset="img/webp/case-2.webp">
                         <source media="(max-width:767px)" srcset="img/content/case-mobile-2.jpg">
-                        <img data-da=".solutions__item--2,991,1" src="img/content/case-2.jpg"
-                            alt="Светильники для общественных мест" class="solutions__img tab-2">
+                        <img data-da=".solutions__item--2,991,1" src="img/content/case-2.jpg" class="solutions__img tab-2"
+                        width="962" height="486" alt="Светильники для общественных мест">
                     </picture>
                     <picture>
+                        <source type="image/webp" media="(max-width: 767px)" srcset="img/webp/case-mobile-3.webp">
+                        <source type="image/webp" srcset="img/webp/case-3.webp">
                         <source media="(max-width:767px)" srcset="img/content/case-mobile-3.jpg">
-                        <img data-da=".solutions__item--3,991,1" src="img/content/case-3.jpg"
-                            alt="Светильники для фасадов и ландшафтов" class="solutions__img tab-3">
+                        <img data-da=".solutions__item--3,991,1" src="img/content/case-3.jpg" class="solutions__img tab-3"
+                        width="962" height="486" alt="Светильники для фасадов и ландшафтов">
                     </picture>
                     <picture>
+                        <source type="image/webp" media="(max-width: 767px)" srcset="img/webp/case-mobile-4.webp">
+                        <source type="image/webp" srcset="img/webp/case-4.webp">
                         <source media="(max-width:767px)" srcset="img/content/case-mobile-4.jpg">
-                        <img data-da=".solutions__item--4,991,1" src="img/content/case-4.jpg"
-                            alt="Светильники для кафе и ресторанов" class="solutions__img tab-4">
+                        <img data-da=".solutions__item--4,991,1" src="img/content/case-4.jpg" class="solutions__img tab-4"
+                        width="962" height="486" alt="Светильники для кафе и ресторанов">
                     </picture>
                     <picture>
+                        <source type="image/webp" media="(max-width: 767px)" srcset="img/webp/case-mobile-5.webp">
+                        <source type="image/webp" srcset="img/webp/case-5.webp">
                         <source media="(max-width:767px)" srcset="img/content/case-mobile-5.jpg">
-                        <img data-da=".solutions__item--5,991,1" src="img/content/case-5.jpg"
-                            alt="Светильники для офисов" class="solutions__img tab-5">
+                        <img data-da=".solutions__item--5,991,1" src="img/content/case-5.jpg" class="solutions__img tab-5"
+                        width="962" height="486" alt="Светильники для офисов">
                     </picture>
                     <picture>
+                        <source type="image/webp" media="(max-width: 767px)" srcset="img/webp/case-mobile-6.webp">
+                        <source type="image/webp" srcset="img/webp/case-6.webp">
                         <source media="(max-width:767px)" srcset="img/content/case-mobile-6.jpg">
-                        <img data-da=".solutions__item--6,991,1" src="img/content/case-6.jpg"
-                            alt="Светильники для жилых интерьеров" class="solutions__img tab-6">
+                        <img data-da=".solutions__item--6,991,1" src="img/content/case-6.jpg" class="solutions__img tab-6"
+                        width="962" height="486" alt="Светильники для жилых интерьеров">
                     </picture>
                 </div>
             </section>
@@ -278,8 +294,11 @@
         <footer class="footer">
             <div class="footer__wrapper container">
                 <div class="footer__column footer__column--logo">
-                    <img class="footer__logo" src="img/content/logo-footer.png" alt="Логотип I-lights" width="66"
-                        height="42">
+                    <picture>
+                        <source type="image/webp" srcset="img/webp/logo-footer.webp">
+                        <img class="footer__logo" src="img/content/logo-footer.png" width="66" height="42"
+                            loading="lazy" alt="Логотип I-lights">
+                    </picture>
                     <div data-da=".footer__wrapper,991,last" class="footer__copyright">
                         &copy; Technolight 2015-2021
                     </div>
