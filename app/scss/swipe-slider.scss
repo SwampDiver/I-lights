@@ -7,11 +7,28 @@
 
     // .slider-banner-main__image
 
-    &__image {
+    &__image-wrapper {
         text-align: center;
 
         img {
             max-width: 100%;
+        }
+    }
+
+    // .slider-banner-main__img
+
+    &__img {
+        width: 969px;
+        height: 518px;
+
+        @media (max-width: $bp-2) {
+            width: 582px;
+            height: 311px;
+        }
+
+        @media (max-width: $bp-4) {
+            width: 340px;
+            height: 182px;
         }
     }
 
