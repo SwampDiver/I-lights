@@ -160,6 +160,7 @@
         width: 40%;
 
         @media (max-width: $bp-2) {
+            margin-bottom: 40px;
             width: 100%;
         }
     }

@@ -112,6 +112,11 @@
                 max-height: 1000px;
             }
         }
+
+        @media (max-width: $bp-1) {
+            padding: 12px;
+            font-size: 12px;
+        }
     }
 
     // .info-services__wrapper
