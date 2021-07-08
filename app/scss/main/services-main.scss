@@ -69,7 +69,7 @@
             top: 10px;
             width: 18px;
             height: 18px;
-            background-image: url("../../img/icons/plus.svg");
+            background-image: url("../img/icons/plus.svg");
             transition: $transition;
             cursor: pointer;
 
@@ -79,23 +79,23 @@
         }
 
         &--1::before {
-            background-image: url("../../img/icons/lightbulb.svg");
+            background-image: url("../img/icons/lightbulb.svg");
         }
 
         &--2::before {
-            background-image: url("../../img/icons/truck.svg");
+            background-image: url("../img/icons/truck.svg");
         }
 
         &--3::before {
-            background-image: url("../../img/icons/progect.svg");
+            background-image: url("../img/icons/progect.svg");
         }
 
         &--4::before {
-            background-image: url("../../img/icons/lamp.svg");
+            background-image: url("../img/icons/lamp.svg");
         }
 
         &--5::before {
-            background-image: url("../../img/icons/repairs.svg");
+            background-image: url("../img/icons/repairs.svg");
         }
     }
 

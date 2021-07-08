@@ -74,7 +74,7 @@
             display: none;
             width: 11px;
             height: 7px;
-            background: url("../../img/icons/arrow-down.svg") center/cover no-repeat;
+            background: url("../img/icons/arrow-down.svg") center/cover no-repeat;
 
             @media (max-width: $bp-2) {
                 display: block;
@@ -104,7 +104,7 @@
                 background-color: transparent;
 
                 &::after {
-                    background: url("../../img/icons/arrow-up.svg") center/cover no-repeat;
+                    background: url("../img/icons/arrow-up.svg") center/cover no-repeat;
                 }
             }
 

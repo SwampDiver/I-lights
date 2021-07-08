@@ -12,7 +12,7 @@
         z-index: -1;
         width: 133px;
         height: 133px;
-        background: url("../../img/pages.png") center/contain no-repeat;
+        background: url("../img/pages.png") center/contain no-repeat;
 
         @media (max-width: $bp-3) {
             display: none;
@@ -110,7 +110,7 @@
         padding-right: 42px;
         font-weight: 700;
         line-height: 30px / 14px * 100%;
-        background: url("../../img/icons/download.svg") no-repeat;
+        background: url("../img/icons/download.svg") no-repeat;
         background-position: 75px -2px;
         transition: $transition;
 

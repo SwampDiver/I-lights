@@ -58,7 +58,7 @@
     // .info-delivery__steps
 
     &__steps {
-        background: url("../../img/icons/line.svg");
+        background: url("../img/icons/line.svg");
         background-position-y: 24px;
         background-repeat: repeat-x;
 
@@ -68,7 +68,7 @@
 
         @media (max-width: $bp-4) {
             margin-bottom: 20px;
-            background: url("../../img/icons/line-vertical.svg");
+            background: url("../img/icons/line-vertical.svg");
             background-position-x: 24px;
             background-repeat: repeat-y;
         }
