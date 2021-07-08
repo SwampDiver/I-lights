@@ -307,10 +307,6 @@
         color: $white;
         background-color: $primary;
         cursor: pointer;
-
-        &:focus {
-            outline: 3px solid $secondary;
-        }
     }
 
     // .cart-item__input
